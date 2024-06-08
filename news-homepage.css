@@ -1,0 +1,208 @@
+/* Font-sizes(px): 
+10/12/14/16/18/20/24/30/36/44/52/62/74/86/98 
+
+- SPACING SYSTEM (px)
+2/4/8/12/16/24/32/48/64/80/96/128 */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  /* font-size:10px;(our font size)
+  10px/16px(default font size of browser)=0.625=62.5% 
+  
+10px: This is the font size you want to set for a particular element. 
+It's expressed in pixels (px), which is an absolute unit of measurement commonly used for 
+specifying sizes in CSS.
+
+16px: This is typically considered as the base font size of the document. 
+It's often set on the <html> element as a default font size. 
+This value is chosen because it's a comfortable size for reading on most screens 
+and is the default font size in many browsers.
+
+Percentage-based font sizes (62.5%) are inherently more responsive than fixed pixel sizes (px).*/
+
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  /* max-width: 92.5rem; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 92.5rem;
+  /* Because we want header to be sticky later */
+  height: 10rem;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  align-items: center;
+}
+
+.main-nav-link:visited,
+.main-nav-link:link {
+  text-decoration: none;
+  display: inline-block;
+  color: hsl(236, 13%, 42%);
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: hsl(5, 85%, 63%);
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+.main-img {
+  width: 100%;
+
+  grid-column: span 2;
+}
+.main-content {
+  font-size: 1.2rem;
+  color: hsl(236, 13%, 42%);
+  font-weight: 400;
+  line-height: 2rem;
+  /* padding-bottom: 3rem; */
+  margin-right: 2rem;
+}
+.second-main-section {
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  grid-column: 3/4;
+  /* grid-row: 1/2; */
+  grid-row: 4/-1;
+  font-size: 1.4rem;
+  padding: 2rem;
+  height: 42rem;
+}
+.middle-content p {
+  padding-bottom: 3rem;
+}
+.subheading {
+  font-size: 1.2rem;
+  color: hsl(233, 8%, 79%);
+  font-weight: 200;
+  line-height: 2.2rem;
+}
+hr {
+  border: 0;
+  border-top: 1px solid hsl(236, 13%, 42%);
+  margin-top: 2.5rem;
+}
+.heading {
+  color: hsl(35, 77%, 62%);
+  font-size: 3rem;
+  font-weight: 700;
+}
+.first-heading {
+  font-size: 4.4rem;
+  font-weight: 800;
+  line-height: 4.5rem;
+  color: hsl(240, 100%, 5%);
+}
+.second-heading:link,
+.second-heading:visited {
+  font-weight: 600;
+  padding: 3rem 0rem 1rem 0rem;
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2.5rem 0rem 1rem 0rem;
+}
+.second-heading:hover,
+.second-heading:active {
+  color: hsl(35, 77%, 62%);
+}
+.button-read:link,
+.button-read:visited {
+  text-transform: uppercase;
+  color: hsl(240, 100%, 5%);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  background-color: hsl(5, 85%, 63%);
+  padding: 1rem 2rem;
+}
+.button-read:hover,
+.button-read:active {
+  color: hsl(36, 100%, 99%);
+  background-color: hsl(240, 100%, 5%);
+}
+
+.article {
+  display: flex;
+  width: 92.5rem;
+  gap: 4rem;
+}
+
+.related-article {
+  display: flex;
+  /* align-items: center; */
+  gap: 2rem;
+}
+
+.related-article > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.number {
+  font-size: 2.4rem;
+  color: hsl(5, 85%, 63%);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.content-heading:link,
+.content-heading:visited {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.content-heading:hover,
+.content-heading:active {
+  color: hsl(5, 85%, 63%);
+}
+
+.btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
